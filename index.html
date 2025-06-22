@@ -5,64 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class Activity - Registration</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        background: #f2f4f8;
-        font-family: "Poppins" sans-serif;
-        padding: 20px;
-      }
-      form {
-        max-width: 600px;
-        margin: auto;
-        padding: 20px;
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 10px 80px rgba(7, 0, 0, 0.8);
-      }
-      label {
-        display: block;
-        margin-bottom: 6px;
-        color: #333;
-        font-weight: 600;
-      }
-      input[type="text"],
-      input[type="password"],
-      input[type="number"],
-      input[type="email"],
-      input[type="date"],
-      select,
-      textarea {
-        width: 95%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
-      h2 {
-        text-align: center;
-        font-size: 2rem;
-      }
-      .hobby-group,
-      .gender-group {
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-        margin-bottom: 20px;
-      }
-      input[type="submit"] {
-        background-color: #3333;
-        color: fffff;
-        padding: 10px 20px;
-        font-size: 20px;
-        border-radius: 16px;
-        border: none;
-        cursor: pointer;
-        margin-top: 10px;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- header -->
+    <nav class="navigation">
+      <!-- logo -->
+      <div><a href="#">LOGO</a></div>
+      <!-- menu toggle bar -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="">Register</a></li>
+        <li><a href="">Old Student</a></li>
+        <li><a href="">Staff</a></li>
+      </ul>
+    </nav>
     <h2>Registration</h2>
     <form action="post">
       <label for="fname">Full name</label>
@@ -153,5 +115,6 @@
       <textarea name="bio" id="bio" rows="10" cols="30"></textarea>
       <input type="submit" value="submit" />
     </form>
+    <script src="main.js"></script>
   </body>
 </html>
